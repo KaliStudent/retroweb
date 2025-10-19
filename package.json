@@ -1,0 +1,55 @@
+{
+  "name": "base44-to-supabase-sdk",
+  "version": "1.0.0",
+  "description": "Universal drop-in replacement for Base44 with zero code changes required. Migrate any Base44 app to Supabase with 100% API compatibility.",
+  "main": "src/lib/custom-sdk.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "test:run": "vitest run",
+    "lint": "echo 'No linting configured yet'",
+    "build": "echo 'No build step required - ES modules'",
+    "prepublishOnly": "npm run test:run"
+  },
+  "keywords": [
+    "base44",
+    "supabase",
+    "migration",
+    "sdk",
+    "postgresql",
+    "database",
+    "self-hosting",
+    "vendor-lock-in",
+    "drop-in-replacement"
+  ],
+  "author": "AI Automators <info@ai-automators.org>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ai-Automators/base44-to-supabase-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ai-Automators/base44-to-supabase-sdk/issues"
+  },
+  "homepage": "https://github.com/Ai-Automators/base44-to-supabase-sdk#readme",
+  "peerDependencies": {
+    "@supabase/supabase-js": "^2.0.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.0.0",
+    "@vitest/ui": "^1.0.0",
+    "jsdom": "^26.1.0",
+    "vitest": "^1.0.0"
+  },
+  "files": [
+    "src/",
+    "SELF_HOSTING_GUIDE.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
